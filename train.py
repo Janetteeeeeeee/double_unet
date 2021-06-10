@@ -104,6 +104,8 @@ if __name__ == "__main__":
     if len(valid_x) % batch_size != 0:
         valid_steps += 1
 
+    print("nice day")
+
     model.fit(train_dataset,
             epochs=epochs,
             validation_data=valid_dataset,
