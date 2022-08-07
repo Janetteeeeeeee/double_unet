@@ -39,4 +39,5 @@ def focal_loss(y_true, y_pred):
     logits = tf.math.log(y_pred / (1 - y_pred))
     loss = focal_loss_with_logits(logits=logits, targets=y_true, alpha=alpha, gamma=gamma, y_pred=y_pred)
     # or reduce_sum and/or axis=-1
+    pass
     return tf.reduce_mean(loss)
